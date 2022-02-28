@@ -1,0 +1,59 @@
+$BivAnimation: rgb(17, 17, 61);
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: $BivAnimation;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+#one {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: 600px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+#two {
+  stroke-dasharray: 274px;
+  stroke-dashoffset: 274px;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+#three {
+  stroke-dasharray: 1407px;
+  stroke-dashoffset: 1407px;
+  animation: fadeInside 0.8s ease-in forwards 1.2s;
+}
+#Four {
+  stroke-dasharray: 1447px;
+  stroke-dashoffset: 1447px;
+  animation: fadeInside 0.8s ease-in forwards 2s;
+}
+#Fives {
+  stroke-dasharray: 834px;
+  stroke-dashoffset: 834px;
+  animation: fadeInside 0.6s ease-in forwards 2.8s;
+}
+#six {
+  stroke-dasharray: 1351px;
+  stroke-dashoffset: 1351px;
+  animation: fadeInside 0.8s ease-in forwards 3.6s;
+}
+svg{
+    animation:fill 1s ease-in forwards 3.6s;
+}
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes fill {
+    from{
+        fill:transparent;
+    }
+    to {
+        fill:#C4C4C4;
+    }
+  }
+  

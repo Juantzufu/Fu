@@ -1,0 +1,48 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: normal;
+  font-size: normal;
+}
+
+/*
+1.nested CSS
+2.voriadles
+3.self &
+4.import
+(1)分類
+(2)重複利用 
+5.mixim
+*/
+header {
+  background-color: blueviolet;
+}
+
+header h1 {
+  color: brown;
+}
+
+header h2 {
+  color: brown;
+}
+
+header h3 {
+  color: brown;
+}
+
+header:hover {
+  background-color: cyan;
+}
+
+header h4 {
+  color: cyan;
+}
+
+header:hover {
+  background-color: cyan;
+  color: cyan;
+}
+/*# sourceMappingURL=styles.css.map */
