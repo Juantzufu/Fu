@@ -1,0 +1,10 @@
+$color1: cyan;
+header {
+  h4 {
+    color: $color1;
+  }
+  &:hover {
+    background-color: cyan;
+    color: $color1;
+  }
+}

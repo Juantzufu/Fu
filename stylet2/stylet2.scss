@@ -1,0 +1,110 @@
+* {
+  //字體
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  // border: 1px #ffac55 solid;
+  font-weight: normal;
+}
+$NavBackgroundColor: white;
+$NavBorderBottom: rgba(169, 169, 169, 0.712);
+$NavBackgroundColorHover: rgba(169, 169, 169, 0.205);
+body {
+  header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    nav {
+      background-color: $NavBackgroundColor;
+      border-bottom: 1px $NavBorderBottom solid;
+      width: 100%;
+      z-index: 5;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          display: flex;
+          a {
+            min-width: 100px;
+            min-height: 10vh;
+            color: #000;
+            text-decoration: none;
+            padding: 0rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25rem;
+            &:hover {
+              transition: all 0.75s;
+              background-color: $NavBackgroundColorHover;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    div.project {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border-bottom: $NavBackgroundColorHover solid 2px;
+      margin: 0rem 2rem;
+      div.left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        img {
+          width: 20rem;
+          padding: 1rem;
+          margin: 1rem;
+          border-radius: 10%;
+          box-shadow: rgba(27, 26, 26, 0.329) 1px 1px 1px 0;
+          &:hover {
+            width: 25rem;
+            transition: all 0.5s;
+          }
+        }
+      }
+      div.rigft {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0rem;
+        border-left: $NavBackgroundColorHover 2px solid;
+        div.Introduction {
+
+          margin: 1rem;
+          h2 {
+            font-size: 2rem;
+            padding: 0.5rem 0rem;
+          }
+          p {
+            font-size: 1.05rem;
+            letter-spacing: 3px;
+            padding-left: 2.25rem;
+          }
+          a {
+            text-decoration: none;
+            color: blue;
+            &:hover {
+              color: blueviolet;
+              font-size: 1.15rem;
+              transition: all 0.3s;
+            }
+          }
+        }
+        &:hover {
+          transition: all 0.3s;
+          border-left: none;
+          background-color: rgba(255, 248, 220, 0.678);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: normal;
+  /* 網站字體 */
+  font-family: "Noto Sans TC", sans-serif;
+  /* border: solid 1px black; */
+}
+header {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(207, 207, 207);
+}
+header h1 {
+  font-weight: 900;
+  font-size: 2.75rem;
+  padding: 0.5rem;
+}
+header h3 {
+  font-weight: 400;
+}
+nav {
+  background-color: dimgray;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 1rem 0.5rem;
+  font-size: 1.25rem;
+}
+nav ul li a.active {
+  background-color: floralwhite;
+  color: black;
+}
+nav ul li a:hover {
+  background-color: floralwhite;
+  color: black;
+  transition: all 0.5s ease;
+}
+main {
+  width: 100%;
+}
+main section {
+  padding: 2rem;
+}
+main section h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+main section p {
+  font-size: 1.15rem;
+}
+main section p.special {
+  font-size: 1.5rem;
+  text-align: center;
+  color: red;
+}
+main section ol {
+  padding-left: 1.5rem;
+  font-size: 1.15rem;
+}
